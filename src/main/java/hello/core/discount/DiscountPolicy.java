@@ -1,7 +1,8 @@
 package hello.core.discount;
 
-import java.lang.reflect.Member;
+import hello.core.member.Member;
+
 
 public interface DiscountPolicy {
-    int discount(Member member, int pirce);
+    int discount(Member member, int price);
 }
