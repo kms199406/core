@@ -12,7 +12,7 @@ public class MemberApp {
         MemberService memberService = appConfig.memberService(); // 인스턴스를 통해 메서드 호출
         OrderService orderService = appConfig.orderService();
         long memberId = 1L;
-        Member member = new Member(memberId, "memberA", Grade.VIP);
+        Member member = new Member(memberId, "memberB", Grade.VIP);
         memberService.join(member);
 
         Member findMember = memberService.findMember(1L);
